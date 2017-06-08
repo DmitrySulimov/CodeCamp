@@ -1,0 +1,33 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 07.06.2017, 17:07:43
+    Author     : DmitrySulimov
+*/
+
+.main_name{
+    margin-top: 5px;
+    padding-left: 50px;
+    font-family: 'Patrick Hand SC', cursive;
+}
+.navbar-default .navbar-nav > li > a{
+    font-size: 15px;
+    text-transform: uppercase;
+    font-family: 'Patrick Hand SC', cursive;
+}
+.navbar-default .navbar-nav > li > a:hover{
+    background-color: orange;
+}
+.general{
+    text-align: center;
+    margin: 80px 0px; 
+}
+h2{
+    text-align: center;
+}
+.aboutme{
+    background-color: orange;
+}

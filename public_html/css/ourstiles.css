@@ -31,3 +31,43 @@ h2{
 #aboutme{
     background-color: orange;
 }
+.avatar {
+    width: 100%;
+}
+ul > li{
+    font-family: 'Patrick Hand SC', cursive;
+    font-size: 20;
+    color: white;
+}
+.answer{
+    color: black;
+    margin: 0;
+}
+.sert{
+    color:  chartreuse;
+}
+.images {
+    width: 225px;
+    height: 224px;
+}
+.input_form{
+    background-color: orange;
+    padding: 20px;
+}
+#sendbut{
+    margin-left: 450px;
+}
+.option {
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-right: 5px;
+}
+.con_me{
+    margin-left: 20px;
+}
+.value{
+    color: orange;
+}
+.icon{
+    color: orange;
+}

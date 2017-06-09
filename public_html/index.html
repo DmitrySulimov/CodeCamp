@@ -7,7 +7,6 @@
         <link rel="stylesheet" href="css/ourstiles.css">
         <script src="js/jquery-3.2.1.min.js"></script>
         <script type="text/javascript" src="js/animatedscroll.js"></script>
-        <link rel="stylesheet" href="css/font-awesome.min.css">
         <link rel="stylesheet" href="css/font-awesome.min.css" type="text/css"/>
         <link rel="stylesheet" href="css/bootstrap-theme.min.css" type="text/css">
         <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
@@ -32,8 +31,8 @@
                   <div class="collapse navbar-collapse " id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav navbar-right">
                       <li><a href="#aboutme">about me <span class="sr-only">(current)</span></a></li>
-                      <li><a href="#">portfolio</a></li>
-                      <li><a href="#">contact me</a></li>
+                      <li><a href="#portfolio">portfolio <span class="sr-only">(current)</span></a></li>
+                      <li><a href="#contactme">contact me <span class="sr-only">(current)</span></a></li>
                     </ul>
                   </div><!-- /.navbar-collapse -->
               </nav>
@@ -41,12 +40,102 @@
         <div class="general img-responsive">
             <img src="img/general.png" alt="general image">
         </div>
+            <!--Div about me-->
             <div id="aboutme" class="row">
                 <h2 class="text-center">About me</h2>
                 <div class="col-md-3">
-                    <img src="img/user.png" alt="Sulimov Dmitry" class="img-circle">
+                    <img src="img/user.png" alt="Sulimov Dmitry" class="img-circle avatar">
                  </div>
+                <div class="col-md-9 information">
+                    <ul class="list-unstyled">
+                        <li>Name: <span class="answer">Dmitry  Sulimov</span></li>
+                        <li>Age <span class="answer">19 y.o.</span></li>
+                        <li>Leave: <span class="answer">Vinnitsa</span></li>
+                        <li>Education: 
+                            <p class="answer"><span>2012 - 2016 </span>Vinnitsa Technical College <span class="sert">as Computer Engineer;</span></p>
+                            <p class="answer"><span>2016 - ... </span>Donetsk National University <span class="sert">as Developer.</span></p>
+                        </li>
+                        <li>Achievements:
+                            <p class="answer"><span>2015 - Cisco network academy<span class="sert"> CCENT;</span></p>
+                            <p class="answer"><span>2014 - WEB_VNTU<span class="sert"> Best Flash Animation (3rd place);</span></p>
+                            <p class="answer"><span>2017 - FreeCodeCamp<span class="sert"> FrontEnd dev certificate./p>
+                        </li>
+                        <li>Languages:
+                            <p class="answer">Ukrainiane<span class="sert"> Native speaker;</span></p>
+                            <p class="answer">Russian<span class="sert"> Native speaker;</span></p>
+                            <p class="answer">English<span class="sert"> Pre intermediate.</span></p>
+                        </li>
+                        <li>Skills:
+                            <p class="answer">Administraiting: Windows, Linux, Ansible, Mikrotik, Zabbix, Bash.</p>
+                            <p class="answer">Developing: HTML5/CSS3, Twitter Bootstrap, jQuery, JS, OOP, C#(ADO.NET, Windows Forms).</p>
+                            <p class="answer">Database administraiting: MySQL, MsSQL Server</p>
+                        </li>
+                        <li>Work expirience:
+                            <p class="answer">2016-2017 - PremiumCall as System Admitistrator</p>
+                        </li>
+                        <li>Interested in: 
+                            <p class="answer">Football;</p>
+                            <p class="answer">Travels;</p>
+                            <p class="answer">Fitness.</p>
+                        </li>
+                   </ul>
+                </div>
             </div>
+            <div class="row" id="portfolio">
+                <h2>My portfolio</h2>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <a href="http://ladiaservice.zzz.com.ua/" target="_blank"><img class="images" src="img/Joomla.png" alt="joomla image"></a>
+                    </div>
+                    <p class="text-center">Site on CMS Joomla</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <a  href="#" target="_blank"><img class="images" src="img/web_development.jpg" alt="web image"></a>
+                    </div>
+                    <p class="text-center">My web works</p>
+                </div>
+                <div class="col-md-4">
+                    <div class="text-center">
+                        <a href="https://github.com/DmitrySulimov/Course-work-3KH-A2/tree/master/ImageSearch" target="_blank"><img class="images" src="img/software_development.png" alt="software image"></a>
+                    </div>
+                    <p class="text-center">Application for search images</p>
+                </div>
+            </div>
+            <div class="row" id="contactme">
+                <h2>Fill the form</h2>
+                <div class="col-md-6 input_form">
+                    <h3 class="text-center">Fill form</h3>
+                    <form>
+                        <label class="option">Name:</label><input type="text" value="enter your name">
+                        <br><label  for="phone" class="option">Phone:</label><input type="tel" placeholder="(XXX) XXX XX XX" name="phone" id="phone">
+                        <br><label class="option">What do you want?</label><input type="text" value="your offer">
+                        <br><label class="option" for="email">Email: </label><input name="email" type="email" placeholder="user@gmail.com">
+                        <br><button class="btn" id="sendbut" type="submit" formmethod="get" formaction="#">Send</button>
+                    </form>
+                </div>
+                <div class="col-md-6 contact_information">
+                    <h2>Or contact me</h2>
+                    <p><i class="fa fa-telegram con_me" aria-hidden="true"></i>  <span class="value">0632791303</span></p>
+                    <p><i class="fa fa-instagram con_me" aria-hidden="true"></i>  <span class="value">juventini_dmitry</span></p>
+                    <p><span class="value"></span></p>
+                </div>
+            </div>
+            <footer>
+                <div class="row">
+                    <div class="col-md-8 copyrigth">
+                        &copy; Sulimov Dmitry
+                    </div>
+                    <div class="col-md-4">
+                        <ul class="list-inline list-unstyled">
+                            <li><a href="https://github.com/DmitrySulimov" target="_blank"><i class="icon fa fa-git"></i></a></li>
+                            <li><a href="https://www.freecodecamp.com/dmitrysulimov" target="_blank"><i class="icon fa fa-free-code-camp"></i></a></li>
+                            <li><a href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D1%81%D1%83%D0%BB%D0%B8%D0%BC%D0%BE%D0%B2-a5b708109/" target="_blank"><i class="icon fa fa-linkedin"></i></a></li>
+                            <li><a href="https://www.facebook.com/profile.php?id=100010249606487" target="_blank"><i class="icon fa fa-facebook"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
      </div><!-- /.container -->
     </body>
 </html>

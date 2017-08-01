@@ -12,7 +12,7 @@
         <link href="https://fonts.googleapis.com/css?family=Patrick+Hand+SC" rel="stylesheet">
     </head>
     <body>
-        <div class="container">
+        <div class="container-fluid">
         <header>
             <nav class="navbar navbar-default navbar-fixed-top" id="menu">
                 
@@ -24,7 +24,7 @@
                       <span class="icon-bar"></span>
                       <span class="icon-bar"></span>
                     </button>
-                      <img src="img/freeCodeCamp-alternative.png" alt="freeCodeCamp project" class="img-responsive nav-logo">
+                      <a href="#general"><img src="img/freeCodeCamp-alternative.png" alt="freeCodeCamp project" class="img-responsive nav-logo"></a>
                   </div>
                   <h1 class="navbar-text main_name">My portfolio</h1>
                   <!-- Collect the nav links, forms, and other content for toggling -->
@@ -37,16 +37,22 @@
                   </div><!-- /.navbar-collapse -->
               </nav>
         </header>
-        <div class="general img-responsive">
-            <img src="img/general.png" alt="general image">
+            <div class="general" id="general">
+                <img class="main_theme" src="img/general.png" alt="general image" usemap="#Map">
+            <map name="Map" id="Map">
+            <area alt="" title="" href="#aboutme" shape="poly" coords="252,38,264,38,275,43,285,48,293,53,302,62,308,69,313,80,316,90,318,103,317,114,312,127,306,139,299,147,291,155,277,163,257,168,241,167,228,162,216,156,204,144,194,126,188,106,189,91,191,82,197,69,204,59,214,51,230,42" />
+            <area alt="" title="" href="#aboutme" shape="poly" coords="251,224,264,226,275,229,287,237,296,247,304,257,308,272,307,291,302,306,294,318,285,326,275,331,262,336,245,336,232,333,221,327,213,321,206,312,199,299,195,283,196,272,200,258,208,246,216,238,230,229" />
+            <area alt="" title="" href="#portfolio" shape="poly" coords="103,307,114,310,121,312,131,316,140,322,147,330,154,339,158,347,161,355,163,363,163,372,162,385,157,396,151,407,143,416,135,422,122,429,109,434,90,435,77,433,66,426,56,421,49,411,41,400,35,389,34,381,33,368,34,356,41,340,51,327,61,317,75,311" />    
+            <area alt="" title="" href="#contactme" shape="poly" coords="458,333,465,344,469,354,472,367,471,385,465,402,457,413,448,421,437,430,430,432,415,436,395,435,381,430,372,424,362,416,357,411,351,401,348,393,344,378,345,370,347,354,351,343,356,333,366,323,377,315,386,312,397,309,417,309,428,311,445,319" />
+            </map>
         </div>
             <!--Div about me-->
             <div id="aboutme" class="row">
                 <h2 class="text-center">About me</h2>
-                <div class="col-md-3">
+                <div class="col-md-3 col-sm-12 col-xs-12">
                     <img src="img/user.png" alt="Sulimov Dmitry" class="img-circle avatar">
                  </div>
-                <div class="col-md-9 information">
+                <div class="col-md-9 col-sm-12 col-xs-12 information">
                     <ul class="list-unstyled">
                         <li>Name: <span class="answer">Dmitry  Sulimov</span></li>
                         <li>Age <span class="answer">19 y.o.</span></li>
@@ -56,9 +62,9 @@
                             <p class="answer"><span>2016 - ... </span>Donetsk National University <span class="sert">as Developer.</span></p>
                         </li>
                         <li>Achievements:
-                            <p class="answer"><span>2015 - Cisco network academy<span class="sert"> CCENT;</span></p>
-                            <p class="answer"><span>2014 - WEB_VNTU<span class="sert"> Best Flash Animation (3rd place);</span></p>
-                            <p class="answer"><span>2017 - FreeCodeCamp<span class="sert"> FrontEnd dev certificate./p>
+                            <p class="answer">2015 - Cisco network academy<span class="sert"> CCENT;</span></p>
+                            <p class="answer">2014 - WEB_VNTU<span class="sert"> Best Flash Animation (3rd place);</span></p>
+                            <p class="answer">2017 - FreeCodeCamp<span class="sert"> FrontEnd dev certificate.</span></p>
                         </li>
                         <li>Languages:
                             <p class="answer">Ukrainiane<span class="sert"> Native speaker;</span></p>
@@ -83,19 +89,19 @@
             </div>
             <div class="row" id="portfolio">
                 <h2>My portfolio</h2>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="text-center">
                         <a href="http://ladiaservice.zzz.com.ua/" target="_blank"><img class="images" src="img/Joomla.png" alt="joomla image"></a>
                     </div>
                     <p class="text-center">Site on CMS Joomla</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="text-center">
                         <a  href="#" target="_blank"><img class="images" src="img/web_development.jpg" alt="web image"></a>
                     </div>
                     <p class="text-center">My web works</p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-12 col-xs-12">
                     <div class="text-center">
                         <a href="https://github.com/DmitrySulimov/Course-work-3KH-A2/tree/master/ImageSearch" target="_blank"><img class="images" src="img/software_development.png" alt="software image"></a>
                     </div>
@@ -104,17 +110,17 @@
             </div>
             <div class="row" id="contactme">
                 <h2>Fill the form</h2>
-                <div class="col-md-6 input_form">
+                <div class="col-md-6 col-sm-6 col-xs-12 input_form">
                     <h3 class="text-center">Fill form</h3>
                     <form>
                         <label class="option">Name:</label><input type="text" value="enter your name">
                         <br><label  for="phone" class="option">Phone:</label><input type="tel" placeholder="(XXX) XXX XX XX" name="phone" id="phone">
                         <br><label class="option">What do you want?</label><input type="text" value="your offer">
-                        <br><label class="option" for="email">Email: </label><input name="email" type="email" placeholder="user@gmail.com">
+                        <br><label class="option" for="email">Email: </label><input id="email" name="email" type="email" placeholder="user@gmail.com">
                         <br><button class="btn" id="sendbut" type="submit" formmethod="get" formaction="#">Send</button>
                     </form>
                 </div>
-                <div class="col-md-6 contact_information">
+                <div class="col-md-6 col-sm-6 col-xs-12 contact_information">
                     <h2>Or contact me</h2>
                     <p><i class="fa fa-telegram con_me" aria-hidden="true"></i>  <span class="value">0632791303</span></p>
                     <p><i class="fa fa-instagram con_me" aria-hidden="true"></i>  <span class="value">juventini_dmitry</span></p>
@@ -123,10 +129,10 @@
             </div>
             <footer>
                 <div class="row">
-                    <div class="col-md-8 copyrigth">
+                    <div class="col-md-8 col-sm-8 col-xs-6">
                         &copy; Sulimov Dmitry
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 col-sm-4 col-xs-6 icons">
                         <ul class="list-inline list-unstyled">
                             <li><a href="https://github.com/DmitrySulimov" target="_blank"><i class="icon fa fa-git"></i></a></li>
                             <li><a href="https://www.freecodecamp.com/dmitrysulimov" target="_blank"><i class="icon fa fa-free-code-camp"></i></a></li>
@@ -136,6 +142,6 @@
                     </div>
                 </div>
             </footer>
-     </div><!-- /.container -->
+        </div><!-- /.container -->
     </body>
 </html>

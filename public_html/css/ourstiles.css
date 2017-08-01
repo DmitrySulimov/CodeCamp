@@ -69,5 +69,24 @@ ul > li{
     color: orange;
 }
 .icon{
-    color: orange;
+    color: black;
 }
+.icons{
+    text-align: right;
+}
+footer{
+    border-top: 1px #000 solid;
+    padding-top: 10px;
+    }
+
+/*@media(max-device-width:568px){
+    .main_theme{
+        height: 400px;
+        width: 360px;
+    }
+}
+@media(max-device-width:800px){
+    .main_theme{
+        size: 600px;
+    }*/
+/*}*/
